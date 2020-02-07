@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fixed-sn">
+
+  <!-- SideNav slide-out button -->
+  <a href="#" data-activates="slide-out" class="btn-floating btn-primary button-collapse"><i
+      class="fas fa-bars"></i></a>
+
+  <!-- Sidebar navigation -->
+  <div id="slide-out" class="side-nav fixed wide side-nav-bg">
+    <ul class="custom-scrollbar">
+      <!-- Logo -->
+      <li class="">
+        <div class="logo-wrapper sn-ad-avatar-wrapper waves-light">
+          <a href="#"><span>Admin Console</span></a>
+        </div>
+      </li>
+      <!--/. Logo -->
+      <!-- Side navigation links -->
+      <li>
+        <ul class="collapsible collapsible-accordion">
+          <li><a class="waves-effect"><i class="sv-slim-icon fas fa-car"></i>Cars</a>
+          </li>
+          <li><a class="waves-effect"><i class="sv-slim-icon fas fa-angle-double-left"></i>Account Verification</a>
+          </li>
+          <li><a class="waves-effect"><i class="sv-slim-icon fas fa-angle-double-left"></i>Minimize menu</a>
+          </li>
+        </ul>
+      </li>
+      <!--/. Side navigation links -->
+    </ul>
+    <div></div>
+  </div>
+  <!--/. Sidebar navigation -->
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav elegant-color-dark">
+    <!-- SideNav slide-out button -->
+    <div class="float-left">
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+    </div>
+
+    <div class="breadcrumb-dn mr-auto">
+      <a class="nav-link text-center"><img src="img/Logo-sm.png" class="rounded-circle "> <span
+          class="clearfix d-none d-sm-inline-block ml-1">Car Renting App</span></a>
+    </div>
+    <!-- Breadcrumb-->
+    <ul class="nav navbar-nav nav-flex-icons ml-auto">
+      <li class="nav-item">
+        <a class="nav-link"><i class="fas fa-envelope"></i> <span
+            class="clearfix d-none d-sm-inline-block">Notification</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="far fa-user pr-2" aria-hidden="true"></i>
+          <span class="clearfix d-none d-sm-inline-block">Account</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.Navbar -->
+
+  <!--Main Layout-->
+  <main class="ml-3 mr-3 mt-0 pt-3">
+    <div class="container-fluid white">
+
+      <h1 class="text-center dark-grey-text pt-4">Statistics</h1>
+
+      <!-- Card deck -->
+      <div class="card-deck pt-4">
+
+        <!--Card-->
+        <div class="container z-depth-1mb-4 col-6">
+          <!--Section: Content-->
+          <section class=" dark-grey-text text-center text-lg-left">
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-lg-8 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+                <canvas id="labelChart"></canvas>
+
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 mb-4 mb-lg-0">
+
+                <h3 class="font-weight-bold">Call to action</h3>
+
+                <p class="font-weight-bold">That's a very nice subheading</p>
+
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
+                  molestiae
+                  numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.</p>
+
+              </div>
+              <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+
+          </section>
+          <!--Section: Content-->
+          <!--Card-->
+
+        </div>
+        <!--Card-->
+
+        <!--Card-->
+        <div class="container z-depth-1mb-4 col-6">
+          <!--Section: Content-->
+          <section class=" dark-grey-text text-center text-lg-left">
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-lg-8 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+                <canvas id="barChart"></canvas>
+
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 mb-4 mb-lg-0">
+
+                <h3 class="font-weight-bold">Call to action</h3>
+
+                <p class="font-weight-bold">That's a very nice subheading</p>
+
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
+                  molestiae
+                  numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam, doloremque laborum.</p>
+
+              </div>
+              <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+
+          </section>
+          <!--Section: Content-->
+          <!--Card-->
+
+        </div>
+        <!--Card-->
+      </div>
+      <!-- Card deck -->
+
+      <!--Big Chart-->
+      <canvas id="scatterChart" class="mt-5"></canvas>
+      <!--Big Chart-->
+
+    </div>
+  </main>
+  <!--Main Layout-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+
+
+
+</html>
