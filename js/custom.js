@@ -16,6 +16,9 @@ $(document).ready(function () {
   
   $('.mdb-select').materialSelect();
 
+  //Stop carousels from auto changing
+  $('.carousel').carousel('pause')
+
   //Pie chart
   var ctxP = document.getElementById("labelChart").getContext('2d');
   var myPieChart = new Chart(ctxP, {

@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="fixed-sn main-bg">
+<body class="fixed-sn">
 
   <!-- SideNav slide-out button -->
   <a href="#" data-activates="slide-out" class="btn-floating btn-primary button-collapse"><i
@@ -92,7 +92,7 @@
   <!--Main Layout-->
   <main class="ml-3 mr-3 mt-0 pt-3 mb-3">
     <div class="container-fluid white dark-grey-text pl-5 pr-5 pt-3">
-      <h1 class="text-center">Danh sách xe cần xác nhận</h1>
+      <h1 class="text-center">Danh sách xác nhận người dùng</h1>
 
       <form class="grey lighten-3 p-4">
 
@@ -100,66 +100,76 @@
         <!--Tên chủ xe-->
         <div class="form-row">
           <div class="col-md-4 mb-3">
-            <label for="validationCustom03">Tên Chủ xe:</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="Tên chủ xe" required>
+            <label for="validationCustom03">Tên người dùng:</label>
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Tên người dùng" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <!--Giới tính-->
+          <div class="col-md-1 mb-3">
+            <div><label class="">Giới tính:</label></div>
+            <div>
+              <select class="browser-default custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">Nam</option>
+                <option value="2">Nữ</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!--Dòng 3-->
+        <div class="text-center mb-2 form-row">
+          <div class="col-12 text-left">
+            <label for="validationCustom03">Ngày tháng tạo tài khoản:</label>
+          </div>
+
+          <div class="col-1">
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Ngày" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-1">
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Tháng" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-1">
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Năm" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+
+          <div class="mt-2 ml-3 mr-3">đến</div>
+
+          <div class="col-1">
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Ngày" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-1">
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Tháng" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-1">
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Năm" required>
             <div class="invalid-feedback">
               Please provide a valid city.
             </div>
           </div>
         </div>
 
-        <!--Dòng 2-->
-        <div class="form-row">
-          <!--Hãng xe-->
-          <div class="col-md-2 mb-3">
-            <div><label class="">Hãng xe:</label></div>
-            <div>
-              <select class="browser-default custom-select">
-                <option selected>Open this select menu</option>
-                <option value="1">Audi</option>
-                <option value="2">Bentley</option>
-                <option value="3">Ford</option>
-              </select>
-            </div>
-          </div>
-
-          <!--Loại xe-->
-          <div class="col-md-2 mb-3">
-            <label for="validationCustom05">Loại xe:</label>
-            <div>
-              <select class="browser-default custom-select">
-                <option selected>Open this select menu</option>
-                <option value="1">4 chỗ</option>
-                <option value="2">7 chỗ</option>
-                <option value="3">Ford</option>
-              </select>
-            </div>
-            <div class="invalid-feedback">
-              Please provide a valid zip.
-            </div>
-          </div>
-
-          <!--Mẫu xe-->
-          <div class="col-md-2 mb-3">
-            <label for="validationCustom05">Mẫu xe:</label>
-            <div>
-              <select class="browser-default custom-select">
-                <option selected>Open this select menu</option>
-                <option value="1">4 chỗ</option>
-                <option value="2">7 chỗ</option>
-              </select>
-            </div>
-            <div class="invalid-feedback">
-              Please provide a valid zip.
-            </div>
-          </div>
-
-        </div>
-
         <!--Dòng 3-->
         <div class="text-center mb-2 form-row">
           <div class="col-12 text-left">
-            <label for="validationCustom03">Ngày tháng nộp đơn:</label>
+            <label for="validationCustom03">Ngày tháng gửi yêu cầu:</label>
           </div>
 
           <div class="col-1">
@@ -210,7 +220,7 @@
           <!-- Cửa sổ trời -->
           <div class="form-check col-md-2 mb-3 mt-2">
             <input type="checkbox" class="form-check-input" id="materialInline7">
-            <label class="form-check-label" for="materialInline7">Verification Pending</label>
+            <label class="form-check-label" for="materialInline7">Active</label>
           </div>
 
           <!-- Bluetooth -->
@@ -222,7 +232,7 @@
           <!-- GPS -->
           <div class="form-check col-2 mb-3 mt-2">
             <input type="checkbox" class="form-check-input" id="materialInline9">
-            <label class="form-check-label" for="materialInline9">Approved</label>
+            <label class="form-check-label" for="materialInline9">Verification Pending</label>
           </div>
         </div>
 
@@ -242,17 +252,17 @@
       <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
         <thead class="elegant-color lighten-3 white-text">
           <tr>
-            <th class="th-lg font-weight-bold">Chủ xe
+            <th class="th-lg font-weight-bold">Id
             </th>
-            <th class="th-lg font-weight-bold">Tên Xe
+            <th class="th-lg font-weight-bold">Tên
             </th>
-            <th class="th-lg font-weight-bold">Hãng xe
+            <th class="th-lg font-weight-bold">Giới tính
             </th>
-            <th class="th-lg font-weight-bold">Loại xe
+            <th class="th-lg font-weight-bold">Bằng lái
             </th>
-            <th class="th-lg font-weight-bold">Mẫu xe
+            <th class="th-lg font-weight-bold">Ngày tạo tài khoản
             </th>
-            <th class="th-lg font-weight-bold">Ngày nộp
+            <th class="th-lg font-weight-bold">Ngày gửi yêu cầu
             </th>
             <th class="th-lg font-weight-bold">Tình trạng
             </th>
@@ -262,24 +272,17 @@
         </thead>
         <tbody>
           <tr>
-            <td class="align-middle">
-              <a>Nguyễn Văn A</a></br>
-            </td>
-            <td class="align-middle"><a data-toggle="modal" data-target="#modalQuickView">Ford F-150 Raptor</a> </br>
-              <span class="badge elegant-color">Bluetooth</span>
-              <span class="badge elegant-color">Cửa sổ trời</span>
-              <span class="badge elegant-color">GPS</span>
-            </td>
-            <td class="align-middle">Ford</td>
-            <td class="align-middle">6 chỗ</td>
-            <td class="align-middle">Ford F-150 Raptor</td>
-            <td class="align-middle">12/1/2020</td>
+            <td class="align-middle"><a>123123</a></td>
+            <td class="align-middle"><a  data-toggle="modal" data-target="#modalQuickView">Nguyễn Văn A</a></td>
+            <td class="align-middle">Nam</td>
+            <td class="align-middle">445234788</td>
+            <td class="align-middle">1/1/2020</td>
+            <td class="align-middle">2/1/2020</td>
             <td class="align-middle">Pending</td>
             <td class="align-middle text-center">
-              <a class="btn btn-sm btn-danger">Disapprove</a>
+              <a class="btn btn-sm btn-danger">Disable</a>
               <a class="btn btn-sm btn-success">Approve</a>
             </td>
-
           </tr>
 
           <!-- Modal: modalQuickView -->
@@ -296,18 +299,18 @@
                         <div class="carousel-inner" role="listbox">
                           <div class="carousel-item active">
                             <img class="d-block w-100"
-                              src="https://whatcar.vn/media/2019/12/new-ford-focus-rs-rendered-focus-st-also-looks-mighty-good-124916_1-1024x576.jpg"
+                              src="img/Avatar.png"
                               alt="First slide">
                           </div>
                           <div class="carousel-item">
                             <img class="d-block w-100"
-                              src="https://cms-i.autodaily.vn/du-lieu/2016/08/10/Ford_Focus_RS_2016%20(2).jpg"
+                              src="img/CMND.jpg"
                               alt="Second slide">
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100"
-                              src="https://xehay.vn/uploads/images/2017/9/02/xehay-2018-ford-focus-rs-edition-150917-1.jpg"
-                              alt="Third slide">
+                            <video class="video-fluid" autoplay loop muted>
+                              <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4" type="video/mp4" />
+                            </video>
                           </div>
                         </div>
                         <!--/.Slides-->
@@ -324,16 +327,16 @@
                         <ol class="carousel-indicators">
                           <li data-target="#carousel-thumb" data-slide-to="0" class="active">
                             <img
-                              src="https://whatcar.vn/media/2019/12/new-ford-focus-rs-rendered-focus-st-also-looks-mighty-good-124916_1-1024x576.jpg"
+                              src="img/Avatar.png"
                               width="60">
                           </li>
                           <li data-target="#carousel-thumb" data-slide-to="1">
-                            <img src="https://cms-i.autodaily.vn/du-lieu/2016/08/10/Ford_Focus_RS_2016%20(2).jpg"
+                            <img src="img/CMND.jpg"
                               width="60">
                           </li>
                           <li data-target="#carousel-thumb" data-slide-to="2">
                             <img
-                              src="https://xehay.vn/uploads/images/2017/9/02/xehay-2018-ford-focus-rs-edition-150917-1.jpg"
+                              src="img/Video Icon.png"
                               width="60">
                           </li>
                         </ol>
@@ -341,43 +344,31 @@
                       <!--/.Carousel Wrapper-->
                     </div>
                     <div class="col-lg-6 border-left">
-                      <h2 class="h2-responsive product-name mb-3">
-                        <strong>Ford F-150 Raptor</strong>
+                      <h2 class="h2-responsive product-name mb-3 pt-2">
+                        <strong>Nguyễn Văn A:</strong>
                       </h2>
 
                       <div class="row">
-                        <h6 class="col-3 font-weight-bold">Chủ xe:</h6>
-                        <h6 class="col-9">Nguyễn Văn A</h6>
-                        <h6 class="col-3 font-weight-bold">Giấy phép lái xe:</h6>
-                        <h6 class="col-9">19990101</h6>
-                        <h6 class="col-3 font-weight-bold">Hãng xe:</h6>
-                        <h6 class="col-9">Ford</h6>
-                        <h6 class="col-3 font-weight-bold">Loại xe:</h6>
-                        <h6 class="col-9">7 chỗ</h6>
-                        <h6 class="col-3 font-weight-bold">Mẫu xe:</h6>
-                        <h6 class="col-9">Ford F-150 Raptor</h6>
-                        <h6 class="col-3 font-weight-bold">Năm sản xuất:</h6>
-                        <h6 class="col-9">2010</h6>
-                        <h6 class="col-3 font-weight-bold">Biển số xe:</h6>
-                        <h6 class="col-9">112731</h6>
-                        <h6 class="col-3 font-weight-bold">Số ghế ngồi:</h6>
-                        <h6 class="col-9">6</h6>
-                        <h6 class="col-3 font-weight-bold">Số đăng ký xe:</h6>
-                        <h6 class="col-9">23432423</h6>
-                        <h6 class="col-3 font-weight-bold">Nhiên liệu:</h6>
-                        <h6 class="col-9">xăng</h6>
-                        <h6 class="col-3 font-weight-bold">Giới hạn km:</h6>
-                        <h6 class="col-9">100 km</h6>
-                        <h6 class="col-3 font-weight-bold">Ngày đăng ký:</h6>
-                        <h6 class="col-9">12/1/2020</h6>
-                        <h6 class="col-3 font-weight-bold">Địa chỉ nhận xe:</h6>
-                        <h6 class="col-9">tòa nhà Vinafor, số 64 Trương Định, Phường 7, Quận 3, Hồ Chí Minh</h6>
-                        <h6 class="col-3 font-weight-bold">Tính năng:</h6>
-                        <div class="col-9">
-                          <span class="badge elegant-color">Bluetooth</span>
-                          <span class="badge elegant-color">Cửa sổ trời</span>
-                          <span class="badge elegant-color">GPS</span>
-                        </div>
+                        <h6 class="col-4 font-weight-bold">Giới tính:</h6>
+                        <h6 class="col-8">Nam</h6>
+                        <h6 class="col-4 font-weight-bold">Số điện thoại:</h6>
+                        <h6 class="col-8">3242332423</h6>
+                        <h6 class="col-4 font-weight-bold">Email:</h6>
+                        <h6 class="col-8">Johndoe@gmail.com</h6>
+                        <h6 class="col-4 font-weight-bold">Giấy chứng minh nhân dân:</h6>
+                        <h6 class="col-8">34563485345</h6>
+                        <h6 class="col-4 font-weight-bold">Giấy đăng ký lái xe:</h6>
+                        <h6 class="col-8">34534534534</h6>
+                        <h6 class="col-4 font-weight-bold">Năm sản xuất:</h6>
+                        <h6 class="col-8">2010</h6>
+                        <h6 class="col-4 font-weight-bold">Biển số xe:</h6>
+                        <h6 class="col-8">112731</h6>
+                        <h6 class="col-4 font-weight-bold">Tình trạng:</h6>
+                        <h6 class="col-8">Verification Pending</h6>
+                        <h6 class="col-4 font-weight-bold">Ngày tạo tài khoản:</h6>
+                        <h6 class="col-8">1/1/2020</h6>
+                        <h6 class="col-4 font-weight-bold">Ngày gửi yêu cầu:</h6>
+                        <h6 class="col-8">2/1/2020</h6>
                       </div>
 
                       <!-- Add to Cart -->
@@ -408,17 +399,15 @@
           </div>
 
           <tr>
-            <td class="align-middle"><a>Nguyen Van B</a></td>
-            <td class="align-middle"><a>Ford F-150 Raptor</a> </br>
-              <span class="badge elegant-color">GPS</span>
-            </td>
-            <td class="align-middle">Ford</td>
-            <td class="align-middle">3 chỗ</td>
-            <td class="align-middle">Ford F-150 Raptor</td>
+            <td class="align-middle"><a>345345</a></td>
+            <td class="align-middle"><a>Nguyễn Văn B</a></td>
+            <td class="align-middle">Nam</td>
+            <td class="align-middle">445234456</td>
+            <td class="align-middle">19/1/2020</td>
             <td class="align-middle">20/1/2020</td>
-            <td class="align-middle text-success">Approved</td>
+            <td class="align-middle text-danger">Rejected</td>
             <td class="align-middle text-center">
-              <a class="btn btn-sm btn-danger">Disapprove</a>
+              <a class="btn btn-sm btn-success">Approve</a>
             </td>
 
           </tr>
@@ -432,11 +421,11 @@
             </th>
             <th class="th-sm">Hãng xe
             </th>
-            <th class="th-sm">Loại xe
+            <th class="th-sm">Loại Xe
             </th>
             <th class="th-sm">Mẫu xe
             </th>
-            <th class="th-sm">Ngày nộp
+            <th class="th-sm">Giá Thuê
             </th>
             <th class="th-sm">Tình trạng
             </th>
@@ -447,56 +436,56 @@
       </table>
 
     </div>
-
+    
   </main>
   <!--Main Layout-->
   <!-- Footer -->
-  <footer class="page-footer font-small elegant-color pt-4">
+<footer class="page-footer font-small elegant-color pt-4">
 
-    <!-- Footer Elements -->
-    <div class="container">
+  <!-- Footer Elements -->
+  <div class="container">
 
-      <!-- Social buttons -->
-      <ul class="list-unstyled list-inline text-center">
-        <li class="list-inline-item">
-          <a class="btn-floating btn-fb mx-1">
-            <i class="fab fa-facebook-f"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-tw mx-1">
-            <i class="fab fa-twitter"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-gplus mx-1">
-            <i class="fab fa-google-plus-g"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-li mx-1">
-            <i class="fab fa-linkedin-in"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-dribbble mx-1">
-            <i class="fab fa-dribbble"> </i>
-          </a>
-        </li>
-      </ul>
-      <!-- Social buttons -->
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <i class="fab fa-dribbble"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
 
-    </div>
-    <!-- Footer Elements -->
+  </div>
+  <!-- Footer Elements -->
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
 
-  </footer>
-  <!-- Footer -->
+</footer>
+<!-- Footer -->
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
