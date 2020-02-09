@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!--Datatable-->
+  <link href="css/addons/datatables.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="fixed-sn">
+
+  <!-- SideNav slide-out button -->
+  <a href="#" data-activates="slide-out" class="btn-floating btn-primary button-collapse"><i
+      class="fas fa-bars"></i></a>
+
+  <!-- Sidebar navigation -->
+  <div id="slide-out" class="side-nav fixed wide side-nav-bg">
+    <ul class="custom-scrollbar ">
+      <!-- Logo -->
+      <li class="">
+        <div class="logo-wrapper sn-ad-avatar-wrapper waves-light">
+          <a href="#"><span>Admin Console</span></a>
+        </div>
+      </li>
+      <!--/. Logo -->
+      <!-- Side navigation links -->
+      <li>
+        <ul class="collapsible collapsible-accordion">
+          <li><a class="waves-effect"><i class="sv-slim-icon fas fa-car"></i>Danh sách xe</a>
+          </li>
+          <li><a class="waves-effect"><i class="sv-slim-icon fas fa-car-side"></i>Xác nhận xe</a>
+          </li>
+          <li><a class="waves-effect"><i class="sv-slim-icon fas fa-user"></i>Danh sách tài khoản</a>
+          </li>
+          <li><a class="waves-effect"><i class="sv-slim-icon fas fa-user"></i>Xác nhận tài khoản</a>
+          </li>
+        </ul>
+      </li>
+      <!--/. Side navigation links -->
+    </ul>
+    <div></div>
+  </div>
+  <!--/. Sidebar navigation -->
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav elegant-color-dark">
+    <!-- SideNav slide-out button -->
+    <div class="float-left">
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+    </div>
+
+    <div class="breadcrumb-dn mr-auto">
+      <a class="nav-link text-center"><img src="img/Logo-sm.png" class="rounded-circle "> <span
+          class="clearfix d-none d-sm-inline-block ml-1">Drivine</span></a>
+    </div>
+    <!-- Breadcrumb-->
+    <ul class="nav navbar-nav nav-flex-icons ml-auto">
+      <li class="nav-item">
+        <a class="nav-link"><i class="fas fa-envelope"></i> <span
+            class="clearfix d-none d-sm-inline-block">Notification</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="far fa-user pr-2" aria-hidden="true"></i>
+          <span class="clearfix d-none d-sm-inline-block">Account</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.Navbar -->
+
+  <!--Main Layout-->
+  <main class="ml-3 mr-3 mt-0 pt-3 mb-3">
+    <div class="container-fluid white dark-grey-text p-4">
+
+      <!--Image and Info Block-->
+      <div class="row">
+        <!--Car image column-->
+        <div class="col-md-5">
+          <!--Carousel Wrapper-->
+          <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block w-100"
+                  src="https://whatcar.vn/media/2019/12/new-ford-focus-rs-rendered-focus-st-also-looks-mighty-good-124916_1-1024x576.jpg"
+                  alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="https://cms-i.autodaily.vn/du-lieu/2016/08/10/Ford_Focus_RS_2016%20(2).jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="https://xehay.vn/uploads/images/2017/9/02/xehay-2018-ford-focus-rs-edition-150917-1.jpg"
+                  alt="Third slide">
+              </div>
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-thumb" data-slide-to="0" class="active">
+                <img
+                  src="https://whatcar.vn/media/2019/12/new-ford-focus-rs-rendered-focus-st-also-looks-mighty-good-124916_1-1024x576.jpg"
+                  width="100">
+              </li>
+              <li data-target="#carousel-thumb" data-slide-to="1">
+                <img src="https://cms-i.autodaily.vn/du-lieu/2016/08/10/Ford_Focus_RS_2016%20(2).jpg" width="100">
+              </li>
+              <li data-target="#carousel-thumb" data-slide-to="2">
+                <img src="https://xehay.vn/uploads/images/2017/9/02/xehay-2018-ford-focus-rs-edition-150917-1.jpg"
+                  width="100">
+              </li>
+            </ol>
+          </div>
+          <!--/.Carousel Wrapper-->
+        </div>
+        <!--Car image column-->
+
+
+        <!--Info Column-->
+        <div class="col-md-7">
+          <h1>Ford F-150 Raptor</h2>
+
+            <!--Rating-->
+            <div>
+              <i class="fas fa-star orange-text"></i>
+              <i class="fas fa-star orange-text"></i>
+              <i class="fas fa-star orange-text"></i>
+              <i class="fas fa-star orange-text"></i>
+              <i class="fas fa-star"></i>
+              (<label class="font-weight-bold">10</label> đánh giá)
+              <label class="ml-2 mr-2"> - </label>
+              <i class="fas fa-car mr-2"></i>
+              <label class="font-weight-bold">20</label> chuyến <label>(40 yêu cầu - tỉ lệ chấp nhận 50%)</label>
+            </div>
+
+            <div>
+              <!--Tags-->
+              <span class="badge badge-dark"><i class="fas fa-map-marker-alt mr-2"></i>GPS</span>
+              <span class="badge badge-dark"><i class="fab fa-bluetooth-b mr-2"></i>Bluetooth</span>
+              <span class="badge badge-dark"><i class="fab fa-usb mr-2"></i>USB</span>
+            </div>
+
+
+            <div class="grey-text font-small mt-2">
+              Ngày tạo: 6:30 a.m 1/1/2020 - Ngày xác nhận: 6:30 a.m 5/1/2020 - Chỉnh sửa gần đây: 6:30 a.m 7/1/2020
+            </div>
+
+            <div class="row pt-3 mt-3 border-top">
+
+              <!--Hãng xe-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Chủ xe:</h4>
+              </div>
+              <div class="col-9">
+                <div class="media mb-3">
+                  <img class="card-img-64 rounded-circle z-depth-1-half d-flex mr-3"
+                    src="https://mdbootstrap.com/img/Photos/Avatars/img (8).jpg" alt="Generic placeholder image">
+                  <div class="media-body ml-3">
+                    <a>
+                      <h6 class="user-name font-weight-bold">Nguyễn Văn A</h6>
+                    </a>
+                    <!-- Rating -->
+                    <i class="far fa-envelope"></i> <label>123456@gmail.com</label> <label class="ml-2 mr-2">-</label>
+                    <i class="fas fa-phone"></i> <label>89237498234</label>
+                    </ul>
+                    <div class="card-data">
+                      <ul class="list-unstyled mb-1">
+                        <li class="comment-date font-small grey-text">
+                          <i class="far fa-clock"></i> 05/10/2015</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Giá xe-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Giá:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>500.000&#8363; / ngày</h6>
+              </div>
+
+              <!--Giới hạn km-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Giới hạn km:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>Tối đa 100km, phí 40.000&#8363; / km vượt giới hạn</h6>
+              </div>
+
+              <!--Hãng xe-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Hãng xe:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>Ford</h6>
+              </div>
+
+              <!--Loại xe-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Loại xe:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>6 Chỗ</h6>
+              </div>
+
+              <!--Mẫu xe-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Mẫu xe:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>Ford F-150 Raptor</h6>
+              </div>
+
+              <!--Năm sx-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Năm sản xuất:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>2015</h6>
+              </div>
+
+              <!--Chỗ ngồi-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Chỗ ngồi:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>6 chỗ</h6>
+              </div>
+
+              <!--Chỗ ngồi-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Biển số:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>AB0909345</h6>
+              </div>
+
+              <!--Giấy đăng ký xe-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Giấy đăng ký xe:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>YG203894</h6>
+              </div>
+
+              <!--Địa chỉ nhận xe-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Địa chỉ nhận xe:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>Tòa nhà Vinafor, số 64 Trương Định, Phường 7, Quận 3, Hồ Chí Minh</h6>
+              </div>
+
+              <!--Mô tả-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Mô tả:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>Ford F-150 Raptor xe gia đình mới, nội thất bọc da đẹp sang trọng.
+                  Thời gian giao xe 19h-21h. Trả xe 19h-20h (sau 20h phụ thu lố giờ)
+                  Rửa xe sạch sẽ khi giao khách. Nếu trả xe quá bẩn phụ thu 100k, xe có mùi thuốc lá, sầu riêng phụ thu
+                  500k. Mong quý khách giữ gìn cho chủ xe, cảm ơn nhiều</h6>
+              </div>
+
+              <!--Mô tả-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Tính năng:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <!--Tags-->
+                <span class="mr-3"><i class="fas fa-map-marker-alt mr-2"></i>GPS</span>
+                <span class="mr-3"><i class="fab fa-bluetooth-b mr-2"></i>Bluetooth</span>
+                <span class="mr-3"><i class="fab fa-usb mr-2"></i>USB</span>
+              </div>
+
+              <!--Tiêu thụ nhiên liệu-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Nhiên liệu:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>Xăng</h6>
+              </div>
+
+              <!--Tiêu thụ nhiên liệu-->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Mức tiêu thụ nhiên liệu:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>10 lít / km</h6>
+              </div>
+
+              <!--Điều khoản -->
+              <div class="col-3">
+                <h6 class="dark-grey-text font-weight-bold">Điều khoản:</h4>
+              </div>
+              <div class="col-9 mb-2">
+                <h6>
+                  1. Chấp nhận Hộ khẩu Thành phố/KT3 Thành phố/Hộ khẩu tỉnh/Passport (Bản gốc) (Giữ lại khi nhận xe)
+                  </br>
+                  2. Tài sản đặt cọc (1 trong 2 hình thức) - Xe máy (giá trị >15t) Cà vẹt (bản gốc) - Hoặc cọc tiền mặt
+                  15 triệu.
+                  - Không hút thuốc, đem sầu riêng lên xe, nếu có mùi phụ thu 500k, trả xe quá bẩn phụ thu 100k.
+                  - Thời gian giao xe từ 20h-22h, trả xe 19h hôm sau. Lố hơn 1h phụ trội 100k/h.</h6>
+              </div>
+
+              <div class="col-12 flex-center">
+                <button class="btn btn-elegant w-50">Disable</button>
+              </div>
+
+            </div>
+        </div>
+      </div>
+      <!--Info Column-->
+    </div>
+    <!--Image and Info Block-->
+
+    </div>
+
+    <div class="container-fluid white dark-grey-text p-5 mt-4">
+      <div class="row">
+
+        <div class="col-md-4">
+
+          <div class="container">
+
+            <!--Section: Block Content-->
+            <section class="dark-grey-text mb-5 border-right">
+
+              <!-- Section heading -->
+              <h3 class="font-weight-bold text-center mb-5">Đánh giá</h3>
+
+              <div class="media mb-3">
+                <img class="card-img-100 rounded-circle z-depth-1-half d-flex mr-3"
+                  src="https://mdbootstrap.com/img/Photos/Avatars/img (8).jpg" alt="Generic placeholder image">
+                <div class="media-body">
+                  <a>
+                    <h5 class="user-name font-weight-bold">John Doe</h5>
+                  </a>
+                  <!-- Rating -->
+                  <ul class="rating mb-2">
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                  </ul>
+                  <div class="card-data">
+                    <ul class="list-unstyled mb-1">
+                      <li class="comment-date font-small grey-text">
+                        <i class="far fa-clock"></i> 05/10/2015</li>
+                    </ul>
+                  </div>
+                  <p class="dark-grey-text article">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                </div>
+              </div>
+
+              <div class="media mb-3">
+                <img class=" card-img-100 rounded-circle z-depth-1-half d-flex mr-3"
+                  src="https://mdbootstrap.com/img/Photos/Avatars/img (28).jpg" alt="Generic placeholder image">
+                <div class="media-body">
+                  <a>
+                    <h5 class="user-name font-weight-bold">Martha Smith</h5>
+                  </a>
+                  <!-- Rating -->
+                  <ul class="rating mb-2">
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star grey-text"></i>
+                    </li>
+                  </ul>
+                  <div class="card-data">
+                    <ul class="list-unstyled mb-1">
+                      <li class="comment-date font-small grey-text">
+                        <i class="far fa-clock"></i> 05/10/2015</li>
+                    </ul>
+                  </div>
+                  <p class="dark-grey-text article">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut</p>
+                </div>
+              </div>
+
+              <div class="media">
+                <img class=" card-img-100 rounded-circle z-depth-1-half d-flex mr-3"
+                  src="https://mdbootstrap.com/img/Photos/Avatars/img (30).jpg" alt="Generic placeholder image">
+                <div class="media-body">
+                  <a>
+                    <h5 class="user-name font-weight-bold">Lily Brown</h5>
+                  </a>
+                  <!-- Rating -->
+                  <ul class="rating mb-2">
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                    <li>
+                      <i class="fas fa-star blue-text"></i>
+                    </li>
+                  </ul>
+                  <div class="card-data">
+                    <ul class="list-unstyled mb-1">
+                      <li class="comment-date font-small grey-text">
+                        <i class="far fa-clock"></i> 05/10/2015</li>
+                    </ul>
+                  </div>
+                  <p class="dark-grey-text article">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut</p>
+                </div>
+              </div>
+
+            </section>
+            <!--Section: Block Content-->
+
+          </div>
+
+        </div>
+
+        <!--Contract-->
+        <div class="col-md-8">
+          <div class="elegant-color pt-2 pl-2 pr-2 pb-1 mb-3">
+            <h3 class="white-text"> Danh sách hợp đồng:</h3>
+          </div>
+
+          <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th class="th-sm">Mã hợp đồng
+                </th>
+                <th class="th-sm">Tên khách
+                </th>
+                <th class="th-sm">Ngày bắt đầu
+                </th>
+                <th class="th-sm">Ngày Kết thúc
+                </th>
+                <th class="th-sm">Giá thỏa thuận
+                </th>
+                <th class="th-sm">Giá thật
+                </th>
+                <th class="th-sm">Tình trạng
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a>TE2343455</a></td>
+                <td>Tiger Nixon</td>
+                <td>5/5/2020</td>
+                <td>6/5/2020</td>
+                <td>1.500.000&#8363;</td>
+                <td>1.500.000&#8363;</td>
+                <td>Đang chờ chấp nhận</td>
+              </tr>
+              <tr>
+                <td><a>TE2234234</a></td>
+                <td>Garrett Winters</td>
+                <td>5/5/2020</td>
+                <td>6/5/2020</td>
+                <td>1.000.000&#8363;</td>
+                <td>2.000.000&#8363;</td>
+                <td>Hoàn tất</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th class="th-sm">Mã hợp đồng
+                </th>
+                <th class="th-sm">Tên khách
+                </th>
+                <th class="th-sm">Ngày bắt đầu
+                </th>
+                <th class="th-sm">Ngày Kết thúc
+                </th>
+                <th class="th-sm">Giá thỏa thuận
+                </th>
+                <th class="th-sm">Giá thật
+                </th>
+                <th class="th-sm">Tình trạng
+                </th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+  <!--Main Layout-->
+  <!-- Footer -->
+  <footer class="page-footer font-small elegant-color pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus-g"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-dribbble"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- MDBootstrap Datatables  -->
+  <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+
+
+
+</html>
